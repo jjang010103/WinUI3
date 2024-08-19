@@ -10,7 +10,8 @@
         Title="WebView2 Overlay Control Test">
     <Grid>
         <WebView2 Grid.Column="1"
-                  Source="https://www.gmarket.co.kr/"
+                  x:Name="webView"
+                  Source="https://www.youtube.com/"
                   VerticalAlignment="Stretch"
                   HorizontalAlignment="Stretch" />
         <Border Grid.Column="1"
@@ -18,7 +19,8 @@
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 Padding="30,30,30,25"
-                CornerRadius="18">
+                CornerRadius="18"
+                Visibility="Collapsed">
             <TextBlock Text="Overlay Control"
                        FontFamily="굴림"
                        Foreground="Magenta"
